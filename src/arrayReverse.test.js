@@ -9,6 +9,7 @@ describe(`Function 'arrayReverse':`, () => {
 
   it(`should return an array`, () => {
     const result = arrayReverse(['hello', 'world']);
+
     expect(result).toBeInstanceOf(Array);
   });
 
@@ -23,12 +24,16 @@ describe(`Function 'arrayReverse':`, () => {
 
   it(`should return reversed strings`, () => {
     const result = arrayReverse(['Mate', 'Academy']);
-    expect(result).toEqual(['ymed', 'acAeteM']);
+
+    expect(result).toEqual(['ymed', 'acAetaM']);
   });
 
   it(`should return reversed strings right length`, () => {
-    expect(arrayReverse(['I', 'am', 'a', 'student!']))
-    .toEqual(['!', 'tn', 'e', 'dutsamaI']);
+    expect(arrayReverse(['I', 'am', 'a', 'student!'])).toEqual([
+      '!',
+      'tn',
+      'e',
+      'dutsamaI',
+    ]);
   });
-
 });
