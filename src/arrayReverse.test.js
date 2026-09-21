@@ -23,7 +23,7 @@ describe(`Function 'arrayReverse':`, () => {
 
   it(`should return reversed strings`, () => {
     const result = arrayReverse(['Mate', 'Academy']);
-    expect(result).toEqual(['ymed', 'aceteM']);
+    expect(result).toEqual(['ymed', 'acAeteM']);
   });
 
   it(`should return reversed strings right length`, () => {
